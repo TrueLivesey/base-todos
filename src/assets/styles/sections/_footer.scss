@@ -1,0 +1,13 @@
+.footer {
+  .container {
+    display: flex;
+    place-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &__link {
+    color: var(--secondary-color);
+    text-decoration: underline;
+  }
+}

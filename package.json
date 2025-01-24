@@ -1,0 +1,40 @@
+{
+  "name": "8_todo-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .js ./",
+    "lint:fix": "eslint --fix --ext .js ./",
+    "format": "prettier --write \"./**/*.{js,jsx,json,css}\""
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "cssnano": "^7.0.6",
+    "globals": "^15.14.0",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "postcss-pxtorem": "^6.1.0",
+    "postcss-sorting": "^9.1.0",
+    "prettier": "^3.4.2",
+    "sharp": "^0.33.5",
+    "svgo": "^3.3.2",
+    "vite": "^6.0.5",
+    "vite-plugin-handlebars": "^2.0.0",
+    "vite-plugin-image-optimizer": "^1.1.8",
+    "vite-plugin-sass-glob-import": "^5.0.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "sass": "^1.83.0",
+    "the-new-css-reset": "^1.11.3"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "not dead"
+  ]
+}

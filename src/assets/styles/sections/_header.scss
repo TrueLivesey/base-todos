@@ -1,0 +1,53 @@
+.header {
+  background-color: var(--primary-color);
+
+  &-form {
+    display: flex;
+    gap: 1rem;
+
+    &__input {
+      width: 100%;
+      padding: 12px 24px;
+      border: none;
+      border-radius: var(--border-radius);
+      color: var(--text-color);
+      background-color: var(--header-input-bg);
+
+      &::placeholder {
+        color: var(--text-input-ph);
+      }
+
+      &:focus-visible {
+        outline: var(--outline);
+        outline-offset: var(--outline-offset);
+      }
+    }
+
+    &__btn {
+      min-width: 120px;
+      padding: 12px 24px;
+      color: #fff;
+      border: none;
+      border-radius: var(--border-radius);
+      background-color: var(--secondary-color);
+      cursor: pointer;
+      transition: background-color var(--main-transition);
+
+      &:focus-visible {
+        outline: var(--outline);
+        outline-offset: var(--outline-offset);
+        background-color: var(--secondary-color-hover);
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          background-color: var(--secondary-color-hover);
+        }
+      }
+
+      &:active {
+        background-color: var(--secondary-color-active);
+      }
+    }
+  }
+}

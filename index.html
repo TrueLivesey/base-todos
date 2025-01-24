@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo app</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      {{> header}}
+
+      <section class="main">
+        <div id="main-content" class="container">
+          <ul class="stats">
+            <li class="stats__item">
+              <span class="stats__text">Remaining: </span>
+              <span id="remaining-tasks" class="stats__count">0</span>
+            </li>
+            <li class="stats__item">
+              <span class="stats__text">Completed: </span>
+              <span id="completed-tasks" class="stats__count">0</span>
+            </li>
+            <li class="stats__item">
+              <span class="stats__text">Total: </span>
+              <span id="total-tasks" class="stats__count">0</span>
+            </li>
+          </ul>
+
+          <ul id="js-todos" class="todos"></ul>
+        </div>
+      </section>
+      {{> footer}}
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
